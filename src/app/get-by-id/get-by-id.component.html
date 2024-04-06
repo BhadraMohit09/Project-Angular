@@ -1,0 +1,12 @@
+<div class="card col-3 m-3 border border-2 border-warning">
+    <img src="{{data.image}}" class="m-4 border border-warning rounded-pill border-2" alt="...">
+    <div class="card-body">
+      <h3 class="card-title text-center">{{data.name}}</h3>
+      <h6 class="text-center">{{data.email}}</h6>
+      <h6 class="text-center">{{data.phone}}</h6>
+      <h6 class="text-center">{{data.address}}</h6>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <button routerLink="/" class="btn btn-primary me-2">Back</button>
+      <button routerLink="/edit/{{data.id}}" class="btn btn-secondary me-2 w-25 fw-75">Edit</button>
+    </div>
+  </div>

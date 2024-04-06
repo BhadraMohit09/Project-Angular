@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+            <div class="card col-3" *ngFor="let e of data">
+                <img src="{{e.image}}" class="m-1 border rounded-pill border-2" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-center">{{e.name}}</h5>
+                  <h6 class="text-center">{{e.email}}</h6>
+                  <h6 class="text-center">{{e.phone}}</h6>
+                  <h6 class="text-center">{{e.address}}</h6>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <button routerLink="{{e.id}}" class="btn btn-primary">View</button>
+                  <button (click)="delete(e.id)" class="btn btn-dark">Delete</button>
+                  <button routerLink="/add" class="btn btn-success">Add Crew</button>
+                </div>
+            </div>
+    </div>
+</div>

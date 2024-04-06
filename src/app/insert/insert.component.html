@@ -1,0 +1,16 @@
+<form [formGroup]="myForm" class="form-horizontal m-5 border border-3 rounded shadow shadow-lg p-3 col-6 justify-content-center" (ngSubmit)="insert()">
+    <input type="text" class="w-100 p-2 m-2 border rounded-pill border-warning" formControlName = "id">
+    <br>
+    <input type="text" class="w-100 p-2 m-2 border rounded-pill border-warning" formControlName = "name">
+    <br>
+    <input type="text" class="w-100 p-2 m-2 border rounded-pill border-warning" formControlName = "image">
+    <br>
+    <input type="text" class="w-100 p-2 m-2 border rounded-pill border-warning" formControlName = "email">
+    <br>
+    <input type="text" class="w-100 p-2 m-2 border rounded-pill border-warning" formControlName = "phone">
+    <br>
+    <input type="text" class="w-100 p-2 m-2 border rounded-pill border-warning" formControlName = "address">
+    <br>
+    <button type="submit" class="btn btn-success  btn-end m-2">Submit</button>
+    <button class="btn btn-info m-2" routerLink="/">Back</button>
+</form>
